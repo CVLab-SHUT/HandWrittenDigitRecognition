@@ -51,13 +51,6 @@ def my_callback(filepath):
         save_weights_only=False
     )
 
-    early_stopping = tf.keras.callbacks.EarlyStopping(
-        monitor='val_accuracy',
-        patience=3,
-        verbose=1,
-        mode='max'
-    )
-
     return [checkpoint]
 
 
