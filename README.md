@@ -6,7 +6,7 @@ This is the implementation of the paper "Advancing Multilingual Handwritten Nume
     <img src="https://github.com/CVLab-SHUT/HandWrittenDigitRecognition/blob/main/data/asset/overview.png">
 </p>
 
-For more information, check out our paper on [[IEEE Access](https://arxiv.org/abs/2211.14764)].
+For more information, check out our paper on [[IEEE Access](https://)].
 
 ## Requirements
 - Python 3.8
