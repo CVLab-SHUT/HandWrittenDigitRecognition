@@ -3,7 +3,7 @@ This is the implementation of the paper "Advancing Multilingual Handwritten Nume
  . Implemented on Python 3.8 and Pytorch 1.8.1.
 
  <p align="middle">
-    <img src="data/assets/overview.jpg">
+    <img src="[data/assets/overview.jpg](https://github.com/CVLab-SHUT/HandWrittenDigitRecognition/blob/main/data/asset/overview.png)">
 </p>
 
 For more information, check out our paper on [[IEEE Access](https://arxiv.org/abs/2211.14764)].
