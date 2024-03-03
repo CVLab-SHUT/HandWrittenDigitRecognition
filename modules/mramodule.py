@@ -1,9 +1,11 @@
 from keras.layers import Multiply, Conv2D, GlobalAveragePooling2D, Reshape, BatchNormalization, add
 import tensorflow as tf
 
+# This class defines a Multi-Resolution Attention (MRA) module.
 class MRAModule(tf.keras.layers.Layer):
     def __init__(self):
         super(MRAModule, self).__init__()
+        # Define the layers in the module
         self.conv1 = Conv2D(64, (1, 1), activation='relu', padding='same')
         self.conv2 = Conv2D(64, (3, 3), activation='relu', padding='same')
         self.conv3 = Conv2D(64, (5, 5), activation='relu', padding='same')
@@ -14,6 +16,7 @@ class MRAModule(tf.keras.layers.Layer):
         self.gap = GlobalAveragePooling2D()
 
     def call(self, inputs):
+        # Define the forward pass
         conv1 = self.conv1(inputs)
         conv2 = self.conv2(inputs)
         conv3 = self.conv3(inputs)
@@ -30,5 +33,6 @@ class MRAModule(tf.keras.layers.Layer):
         return output
 
     def get_config(self):
+        # Method to support model saving and loading
         config = super().get_config()
         return config
