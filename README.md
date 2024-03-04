@@ -13,6 +13,7 @@ This is the implementation of the paper "Advancing Multilingual Handwritten Nume
 - -Tensorflow
 - cuda 11.1
 
+<!--
 Conda environment settings:
 ```bash
 conda create -n protoformer python=3.8
@@ -88,4 +89,4 @@ Create a directory '../Datasets' for the above two few-shot segmentation dataset
 > ```
 
 This project is built upon HSNet:https://github.com/juhongm999/hsnet
-
+-->
