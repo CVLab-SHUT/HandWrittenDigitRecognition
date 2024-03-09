@@ -1,18 +1,19 @@
 ## Advancing Multilingual Handwritten Numeral Recognition with Attention-driven Transfer Learning
 This is the implementation of the paper "Advancing Multilingual Handwritten Numeral Recognition with Attention-driven Transfer Learning" by Amirreza Fateh, Reza Tahmasbi Birgani, Mansoor Fateh, and Vahid Abolghasemi.
- . Implemented on Python 3.8 and Pytorch 1.8.1.
+ . Implemented on Python 3.8 and Tensorflow 2.16.0
 
  <p align="middle">
     <img src="https://github.com/CVLab-SHUT/HandWrittenDigitRecognition/blob/main/data/asset/overview.png">
 </p>
 
-For more information, check out our paper on [[IEEE Access](https://)].
+
 
 ## Requirements
 - Python 3.8
 - -Tensorflow
 - cuda 11.1
 
+<!--
 Conda environment settings:
 ```bash
 conda create -n protoformer python=3.8
@@ -88,4 +89,4 @@ Create a directory '../Datasets' for the above two few-shot segmentation dataset
 > ```
 
 This project is built upon HSNet:https://github.com/juhongm999/hsnet
-
+-->
