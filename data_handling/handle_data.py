@@ -80,15 +80,21 @@ def save_image_digit(X_train: np.array, y_train: np.array, path: str, file_name:
         
 
 # to create a directory for language classification
-def create_directory_language(path: str):
+def create_directory_language(path: str, dest_path: str) -> str:
     folder_path = os.path.join(path, "language_dataset")
-    train_dir_path = os.path.join(folder_path, 'training_dir')
-    validation_dir_path = os.path.join(folder_path, 'validation_dir')
+    dest_path = os.path.join(dest_path, "dataset")
+    if not os.path.exists(dest_path):
+        os.mkdir(dest_path)
+    train_dir_path = os.path.join(dest_path, 'training_dir')
+    validation_dir_path = os.path.join(dest_path, 'validation_dir')
     
     if not os.path.exists(folder_path):
         os.mkdir(folder_path)
+    if not os.path.exists(train_dir_path):
         os.mkdir(train_dir_path)
+    if not os.path.exists(validation_dir_path):
         os.mkdir(validation_dir_path)
+        
         for lan in tqdm(["Arabic","BanglaLekha","English","Gurmukhi",
                     "Kannada","Tibetan","ARDIS", "Chinese",
                     "Gujarati","ISI_Bangla","Persian","Urdu"], desc="creating language directories ..."):
@@ -100,9 +106,9 @@ def create_directory_language(path: str):
     
     
 # save images in directory for language classification
-def save_image_language(path: str):
+def save_image_language(path: str, dest_path: str):
     files_list = os.listdir(path)
-    train_dir_path, validation_dir_path = create_directory_language(path)
+    train_dir_path, validation_dir_path = create_directory_language(path, dest_path)
     languages = read_data(path, files_list)
     
     for lan in tqdm(languages, desc="saving images files ..."):
