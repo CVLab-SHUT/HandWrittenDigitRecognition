@@ -1,7 +1,9 @@
 ## Advancing Multilingual Handwritten Numeral Recognition with Attention-driven Transfer Learning
 This is the implementation of the paper "Advancing Multilingual Handwritten Numeral Recognition with Attention-driven Transfer Learning" by Amirreza Fateh, Reza Tahmasbi Birgani, Mansoor Fateh, and Vahid Abolghasemi.
- . Implemented on Python 3.8 and Tensorflow 2.16.0
 
+ . Implemented on Python 3.12.2 and Tensorflow 2.16.1
+
+<br>
 <p align="middle">
     <img src="data/asset/overview.png">
 </p>
