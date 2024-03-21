@@ -8,10 +8,19 @@ This is the implementation of the paper "Advancing Multilingual Handwritten Nume
 
 
 
-## Requirements
-- Python 3.8
-- -Tensorflow
-- cuda 11.1
+## .bib citation
+cite the paper as follows (it's the early access version):
+
+    @@ARTICLE{10474004,
+    author={Fateh, Amirreza and Birgani, Reza Tahmasbi and Fateh, Mansoor and Abolghasemi, Vahid},
+    journal={IEEE Access}, 
+    title={Advancing Multilingual Handwritten Numeral Recognition with Attention-driven Transfer Learning}, 
+    year={2024},
+    volume={},
+    number={},
+    pages={1-1},
+    keywords={Handwriting recognition;Transfer learning;Image recognition;Support vector machines;Deep learning;Computational modeling;Training;Deep learning;Transfer learning;Multilingual;Handwritten numeral recognition},
+    doi={10.1109/ACCESS.2024.3378598}}
 
 <!--
 Conda environment settings:
