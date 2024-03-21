@@ -3,9 +3,9 @@ This is the implementation of the paper "Advancing Multilingual Handwritten Nume
  . Implemented on Python 3.8 and Tensorflow 2.16.0
 
 <p align="middle">
-    <img src="data/assets/overview.jpg">
+    <img src="data/asset/overview.png">
 </p>
-For more information, check out our paper on [[arXiv](https://arxiv.org/abs/2211.14764)].
+For more information, check out our paper on [[ieeexplore](https://ieeexplore.ieee.org/document/10474004/authors)].
 
 ## Requirements
 
