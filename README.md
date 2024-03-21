@@ -9,7 +9,7 @@ This is the implementation of the paper "Advancing Multilingual Handwritten Nume
 
 
 ## .bib citation
-cite the paper as follows (it's the early access version):
+To cite the paper (early access version), use the following format:
 
     @@ARTICLE{10474004,
     author={Fateh, Amirreza and Birgani, Reza Tahmasbi and Fateh, Mansoor and Abolghasemi, Vahid},
