@@ -2,11 +2,23 @@
 This is the implementation of the paper "Advancing Multilingual Handwritten Numeral Recognition with Attention-driven Transfer Learning" by Amirreza Fateh, Reza Tahmasbi Birgani, Mansoor Fateh, and Vahid Abolghasemi.
  . Implemented on Python 3.8 and Tensorflow 2.16.0
 
- <p align="middle">
-    <img src="https://github.com/CVLab-SHUT/HandWrittenDigitRecognition/blob/main/data/asset/overview.png">
+<p align="middle">
+    <img src="data/assets/overview.jpg">
 </p>
+For more information, check out our paper on [[arXiv](https://arxiv.org/abs/2211.14764)].
 
+## Requirements
 
+- Python 3.12.2
+- Keras 3.1.1
+- Tensorflow 2.16.1
+- scipy 1.12.0
+- scikit-learn 1.4.1
+- numpy 1.26.4
+- pandas 2.2.1
+- opencv-python 4.9.0.80
+- seaborn 0.13.2
+- matplotlib 3.8.3
 
 ## .bib citation
 To cite the paper (early access version), use the following format:
