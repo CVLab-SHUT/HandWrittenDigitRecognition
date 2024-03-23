@@ -1,7 +1,6 @@
 ## Advancing Multilingual Handwritten Numeral Recognition with Attention-driven Transfer Learning
 This is the implementation of the paper "Advancing Multilingual Handwritten Numeral Recognition with Attention-driven Transfer Learning" by Amirreza Fateh, Reza Tahmasbi Birgani, Mansoor Fateh, and Vahid Abolghasemi.
 
- . Implemented on Python 3.12.2 and Tensorflow 2.16.1
 
 <br>
 <p align="middle">
@@ -25,17 +24,14 @@ For more information, check out our paper on [[ieeexplore](https://ieeexplore.ie
 ## .bib citation
 To cite the paper (early access version), use the following format:
 
-    @@ARTICLE{10474004,
-    author={Fateh, Amirreza and Birgani, Reza Tahmasbi and Fateh, Mansoor and Abolghasemi, Vahid},
-    journal={IEEE Access}, 
-    title={Advancing Multilingual Handwritten Numeral Recognition with Attention-driven Transfer Learning}, 
+    @article{fateh2024advancing,
+    title={Advancing Multilingual Handwritten Numeral Recognition with Attention-driven Transfer Learning},
+    author={Fateh, Amirreza and Tahmasbi Birgani, Reza and Fateh, Mansoor and Abolghasemi, Vahid},
+    journal={IEEE Access},
     year={2024},
-    volume={},
-    number={},
-    pages={1-1},
-    keywords={Handwriting recognition;Transfer learning;Image recognition;Support vector machines;Deep learning;Computational modeling;Training;Deep learning;Transfer learning;Multilingual;Handwritten numeral recognition},
-    doi={10.1109/ACCESS.2024.3378598}}
-
+    publisher={Institute of Electrical and Electronics Engineers}
+    }
+    
 <!--
 Conda environment settings:
 ```bash
