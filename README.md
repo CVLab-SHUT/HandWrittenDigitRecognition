@@ -31,7 +31,26 @@ To cite the paper (early access version), use the following format:
     year={2024},
     publisher={Institute of Electrical and Electronics Engineers}
     }
-    
+---
+
+## SUT DIGITal Dataset License
+
+### Overview
+The DIGITal dataset is provided for research and educational purposes. By using the dataset, you agree to comply with these terms.
+
+### Terms of Use
+1. The DIGITal dataset is for non-commercial use only.
+2. You may cite the following paper when using the dataset:
+   - Author(s). "Title of the Paper." Conference or Journal Name, Year. [Link to Paper](https://bing.com/search?q=).
+
+### Disclaimer
+1. The DIGITal dataset is provided "as is" without any warranty.
+2. The authors and organization shall not be liable for any damages arising from the use of the dataset.
+
+### Contact Information
+For inquiries, please contact:
+- Email: rezatb.ds@gmail.com
+
 <!--
 Conda environment settings:
 ```bash
