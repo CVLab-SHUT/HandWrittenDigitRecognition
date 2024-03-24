@@ -41,7 +41,7 @@ The DIGITal dataset is provided for research and educational purposes. By using 
 ### Terms of Use
 1. The DIGITal dataset is for non-commercial use only.
 2. You may cite the following paper when using the dataset:
-   - Author(s). "Title of the Paper." Conference or Journal Name, Year. [Link to Paper](https://bing.com/search?q=).
+   - "Advancing Multilingual Handwritten Numeral Recognition with Attention-driven Transfer Learning" IEEEXplore, 2024. [Link to Paper](https://ieeexplore.ieee.org/document/10474004).
 
 ### Disclaimer
 1. The DIGITal dataset is provided "as is" without any warranty.
