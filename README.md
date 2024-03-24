@@ -34,6 +34,7 @@ To cite the paper (early access version), use the following format:
 ---
 
 ## SUT DIGITal Dataset License
+[License](#License)
 
 ### Overview
 The DIGITal dataset is provided for research and educational purposes. By using the dataset, you agree to comply with these terms.
