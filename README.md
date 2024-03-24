@@ -6,7 +6,7 @@ This is the implementation of the paper "Advancing Multilingual Handwritten Nume
 <p align="middle">
     <img src="data/asset/overview.png">
 </p>
-For more information, check out our paper on [[ieeexplore](https://ieeexplore.ieee.org/document/10474004/authors)].
+For more information, check out our paper on [IEEEXplore](https://ieeexplore.ieee.org/document/10474004)..
 
 ## Requirements
 
