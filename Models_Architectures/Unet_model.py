@@ -57,10 +57,10 @@ class RAUnet(Model):
         bottleneck_output2 = self.bottleneck2(bottleneck_output1)
 
         # Decoding Architecture
-        decoder_output1 = self.decoder_block1(bottleneck_output2, skip_connection4)
-        decoder_output2 = self.decoder_block2(decoder_output1, skip_connection3)
-        decoder_output3 = self.decoder_block3()(decoder_output2, skip_connection2)
-        decoder_output4 = self.decoder_block4()(decoder_output3, skip_connection1)
+        decoder_output1 = self.decoder_block1([bottleneck_output2, skip_connection4])
+        decoder_output2 = self.decoder_block2([decoder_output1, skip_connection3])
+        decoder_output3 = self.decoder_block3([decoder_output2, skip_connection2])
+        decoder_output4 = self.decoder_block4([decoder_output3, skip_connection1])
         
         # Final output
         final_output = self.final_layer(decoder_output4)
