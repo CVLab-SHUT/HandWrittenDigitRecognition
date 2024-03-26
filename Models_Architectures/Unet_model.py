@@ -41,26 +41,26 @@ class RAUnet(Model):
     def call(self, inputs):
         
         # Encoding Architecture
-        skip_connection1, pooled_output1 = self.encoder_block1()(inputs)
-        skip_connection2, pooled_output2 = self.encoder_block2()(pooled_output1)
-        skip_connection3, pooled_output3 = self.encoder_block3()(pooled_output2)
-        skip_connection4, pooled_output4 = self.encoder_block4()(pooled_output3)
+        skip_connection1, pooled_output1 = self.encoder_block1(inputs)
+        skip_connection2, pooled_output2 = self.encoder_block2(pooled_output1)
+        skip_connection3, pooled_output3 = self.encoder_block3(pooled_output2)
+        skip_connection4, pooled_output4 = self.encoder_block4(pooled_output3)
 
         # Skip Block
-        skip_connection1 = self.mra_module1()(skip_connection1)
-        skip_connection2 = self.mra_module2()(skip_connection2)
-        skip_connection3 = self.mra_module3()(skip_connection3)
-        skip_connection4 = self.mra_module4()(skip_connection4)
+        skip_connection1 = self.mra_module1(skip_connection1)
+        skip_connection2 = self.mra_module2(skip_connection2)
+        skip_connection3 = self.mra_module3(skip_connection3)
+        skip_connection4 = self.mra_module4(skip_connection4)
         
         # Bottle Neck
-        bottleneck_output1 = self.bottleneck1()(pooled_output4)
-        bottleneck_output2 = self.bottleneck2()(bottleneck_output1)
+        bottleneck_output1 = self.bottleneck1(pooled_output4)
+        bottleneck_output2 = self.bottleneck2(bottleneck_output1)
 
         # Decoding Architecture
-        decoder_output1 = self.decoder_block1()(bottleneck_output2, skip_connection1)
-        decoder_output2 = self.decoder_block2()(decoder_output1, skip_connection2)
-        decoder_output3 = self.decoder_block3()(decoder_output2, skip_connection3)
-        decoder_output4 = self.decoder_block4()(decoder_output3, skip_connection4)
+        decoder_output1 = self.decoder_block1(bottleneck_output2, skip_connection4)
+        decoder_output2 = self.decoder_block2(decoder_output1, skip_connection3)
+        decoder_output3 = self.decoder_block3()(decoder_output2, skip_connection2)
+        decoder_output4 = self.decoder_block4()(decoder_output3, skip_connection1)
         
         # Final output
         final_output = self.final_layer(decoder_output4)
